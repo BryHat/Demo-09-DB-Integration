@@ -5,7 +5,7 @@ const app = express();
 const fs = require('fs')
 const swaggerUi = require('swagger-ui-express');
 const YAML = require('yaml')
-
+//this is the real deal
 const file  =  fs.readFileSync(process.cwd() + '/swagger.yaml', 'utf8')
 const swaggerDocument = YAML.parse(file)
 const CSS_URL = "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css"
